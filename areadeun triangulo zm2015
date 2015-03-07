@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+
+int main() {
+	
+	float a;
+	float area;
+	float b;
+	float c;
+	float p;
+	
+	cout << "INGRESE EL LADO a; " << endl;
+	cin >> a;
+	cout << "INGRESE EL LADO b; " << endl;
+	cin >> b;
+	cout << "INGRESE EL LADO c; " << endl;
+	cin >> c;
+	p = (a+b+c)/2;
+	area = sqrtf(p*(p-a)*(p-b)*(p-c));
+	cout << "El area es" << area << endl;
+	return 0;
+}
