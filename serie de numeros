@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+void main ()
+{
+	int n,i,mayor,numero;
+	mayor= -9999;
+
+	cout << "Ingrese  la cantidad de numeros cualquiera:" << endl;
+    cin >> n ;
+	for(i=1;i<=n;i++)
+		{ cout << "Un numero:"<< endl;
+	      cin>> numero;
+		  if (mayor<numero) 
+	         mayor=numero;
+	    }
+    cout<< "el mayor numero es:"<< mayor <<endl;
+	getch();
+}
